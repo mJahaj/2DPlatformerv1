@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]// cant add player controler unless rigid body exists
 
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody2D rb;
     // called before start
-    private void awake()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
